@@ -38,15 +38,12 @@
 
 <h2>New book</h2>
 <%= form_with model: Book.new do |f| %>
-<table>
-  <thead>
-  </thead>
-  <tbody>
-    <td>Title</td>
-    <td><%= f.text_field :title %></td>
-    <td>Body</td>
-    <td><%= f.text_area :body %></td>
-    <td><%= f.submit 'Create Book' %></td>
-  </tbody>
-</table>
+
+<p>Title</p>
+<%= f.text_field :title %>
+<p>Body</p>
+<%= f.text_area :body %>
+<br>
+<%= f.submit 'Create Book' %>
+
 <% end %>

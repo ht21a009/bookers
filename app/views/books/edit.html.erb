@@ -1,4 +1,6 @@
+<header>
 <h1>Editing Book</h1>
+</header>
 
 <% if @book.errors.any? %>
   <%= @book.errors.count %>errors prohidited this book from being saved:
@@ -17,6 +19,7 @@
   <p>Body</p>
   <%= f.text_area :body %>
   
+  <br>
   <%= f.submit 'Update Book' %>
   
 <% end %>
